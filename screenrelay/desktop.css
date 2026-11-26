@@ -1,0 +1,75 @@
+.relay-window {
+  color: @relay_ink;
+  background: @relay_night;
+  font-family: Lato, sans-serif;
+  font-size: 11pt;
+}
+.relay-titlebar {
+  color: @relay_ink;
+  background: @relay_night;
+  border-bottom: 1px solid @relay_line;
+  box-shadow: none;
+}
+.relay-titlebar .title { font-weight: 700; }
+.relay-body { padding: 20px 24px 14px; }
+.relay-window label { color: @relay_ink; }
+.relay-window .support { color: @relay_quiet; font-size: 10pt; }
+.status-card {
+  padding: 15px 17px 17px;
+  border: 1px solid @relay_line;
+  border-left: 3px solid @relay_signal;
+  border-radius: 10px;
+  background: @relay_surface;
+}
+.relay-window .status-flag {
+  font: 700 9pt "DejaVu Sans Mono";
+  color: @relay_quiet;
+  letter-spacing: 1px;
+}
+.relay-window .status-flag.live { color: @relay_signal; }
+.status-heading { font-size: 21pt; font-weight: 800; }
+.form-title { font-weight: 700; }
+.audio-row, .empty-devices {
+  padding: 11px 12px;
+  border: 1px solid @relay_line;
+  border-radius: 10px;
+  background: @relay_surface;
+}
+.relay-window .relay-action, .relay-window combobox button {
+  min-height: 31px;
+  padding: 3px 11px;
+  font-weight: 700;
+  color: @relay_ink;
+  background: @relay_surface;
+  border: 1px solid @relay_line;
+  border-radius: 7px;
+  box-shadow: none;
+  text-shadow: none;
+}
+.relay-window button:hover { border-color: @relay_quiet; }
+.relay-window button:focus, .relay-window switch:focus { outline: 2px solid @relay_signal; }
+.relay-window button:disabled { opacity: 0.55; }
+.relay-window .relay-action.primary {
+  background: @relay_signal;
+  color: @relay_night;
+  border-color: @relay_signal;
+}
+.relay-window .relay-action.primary label { color: @relay_night; }
+.relay-window .relay-action.primary:hover { background: @relay_ink; border-color: @relay_ink; }
+.relay-window .relay-action.stop, .relay-window .relay-action.stop label { color: @relay_fault; }
+.relay-window .relay-action.stop:hover { border-color: @relay_fault; }
+.relay-window switch:checked { background: @relay_signal; border-color: @relay_signal; }
+.relay-window spinner { color: @relay_signal; }
+.relay-window scrollbar { background: @relay_night; }
+.relay-window scrollbar slider { background: @relay_line; }
+.relay-window scrollbar slider:hover { background: @relay_quiet; }
+.relay-window scrollbar slider:active { background: @relay_signal; }
+.relay-window .device-button { min-height: 38px; }
+.relay-window .device-button:hover { border-color: @relay_signal; }
+.relay-window entry {
+  color: @relay_ink;
+  background: @relay_night;
+  border: 1px solid @relay_line;
+  border-radius: 7px;
+}
+.relay-window entry:focus { border-color: @relay_signal; }
